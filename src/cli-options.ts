@@ -370,6 +370,12 @@ const cliOptions: CLIOption[] = [
     type: 'boolean',
   },
   {
+    long: 'exactNode',
+    arg: 'command',
+    description: 'Include only packages that satisfy particular Node version.',
+    type: 'string',
+  },
+  {
     long: 'errorLevel',
     short: 'e',
     arg: 'n',

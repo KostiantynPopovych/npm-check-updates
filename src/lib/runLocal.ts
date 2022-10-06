@@ -188,6 +188,10 @@ async function runLocal(
     options.nodeEngineVersion = get(pkg, 'engines.node')
   }
 
+  if (options.exactNode) {
+    options.nodeEngineVersion = options.exactNode;
+  }
+
   if (options.peer) {
     options.peerDependencies = await getPeerDependencies(current, options)
   }

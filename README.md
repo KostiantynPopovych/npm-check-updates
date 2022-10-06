@@ -161,6 +161,8 @@ ncu "/^(?!react-).*$/" # windows
                            no errors occur. 2: exits with error code 0 if no
                            packages need updating (useful for continuous
                            integration). (default: 1)
+--exactNode <command>      Include only packages that satisfy particular Node
+                           version.
 -f, --filter <p>           Include only package names matching the given
                            string, wildcard, glob, comma-or-space-delimited
                            list, /regex/, or predicate function.

@@ -167,6 +167,7 @@ function filterPredicate(options: Options): (o: Packument) => boolean {
     o => allowDeprecatedOrIsNotDeprecated(o, options),
     o => allowPreOrIsNotPre(o, options),
     options.enginesNode ? o => satisfiesNodeEngine(o, options.nodeEngineVersion) : null!,
+    options.exactNode ? o => satisfiesNodeEngine(o, options.exactNode) : null!,
   ])
 }
 

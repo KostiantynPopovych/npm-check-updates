@@ -54,6 +54,9 @@ export interface RunOptions {
   /** Set the error level. 1: exits with error code 0 if no errors occur. 2: exits with error code 0 if no packages need updating (useful for continuous integration). (default: 1) */
   errorLevel?: number
 
+  /** Include only packages that satisfy particular Node version. */
+  exactNode?: string
+
   /** Include only package names matching the given string, wildcard, glob, comma-or-space-delimited list, /regex/, or predicate function. */
   filter?: string | string[] | RegExp | RegExp[] | FilterFunction
 
